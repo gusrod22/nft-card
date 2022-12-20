@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+h3,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Main Css */
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  color: white;
+  font-family: "Outfit", sans-serif;
+  margin: 0 25px;
+  border-radius: 10px;
+}
+.main-layout {
+  padding: 25px;
+}
+.main-content {
+  border-bottom: solid 1px hsl(215, 32%, 27%);
+}
+.main-content > * {
+  margin-top: 1rem;
+}
+.eq-icon {
+  position: relative;
+}
+.svg {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(178, 100%, 50%, 50%);
+}
+#nft-img,
+.svg {
+  transition: 200ms ease-in-out;
+}
+.svg {
+  opacity: 0;
+}
+.eq-icon:hover > .svg {
+  cursor: pointer;
+  opacity: 1;
+}
+h1 {
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+p {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+svg {
+  margin-right: 10px;
+}
+#price-color {
+  color: hsl(178, 100%, 50%);
+}
+.price-time {
+  display: flex;
+  justify-content: space-between;
+}
+.price,
+.time {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.creator {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.creator > img {
+  margin-right: 15px;
+  width: 38px;
+  border: solid white 1px;
+  border-radius: 100%;
+}
+#name-color {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+}
+a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+@media screen and (min-width: 60rem) {
+  .card {
+    width: 400px;
+  }
+  .eq-icon > img {
+    max-width: 100%;
+    height: auto;
+  }
+}
